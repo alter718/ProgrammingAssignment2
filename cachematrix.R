@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## This function creates a list using a matrix as an argument
+## list$get returns the matrix and list$set allows for changing the matrix
+## list$getSolve() returns the inverse of the matrix while list$setSolve() stores the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,7 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function solves the inverse of the matrix if it does not exist and 'gets' the 
+## cached solution if previous solved.
+## The first time it is run it will perform the inverse. The next time it will return the cached 
+## solution.
 
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()

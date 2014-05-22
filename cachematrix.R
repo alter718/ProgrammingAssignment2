@@ -2,8 +2,8 @@
 ## functions do
 
 ## This function creates a list using a matrix as an argument
-## list$get returns the matrix and list$set allows for changing the matrix
-## list$getSolve() returns the inverse of the matrix while list$setSolve() stores the inverse
+## list$get() returns the matrix and list$set() allows for changing the matrix
+## list$getSolve() returns a previously stored solution while list$setSolve() stores the inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
